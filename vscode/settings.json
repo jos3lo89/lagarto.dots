@@ -1,0 +1,109 @@
+{
+  "editor.fontFamily": "IosevkaTerm Nerd Font",
+  "editor.fontSize": 16,
+  "editor.lineNumbers": "relative",
+  "editor.fontLigatures": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.cursorSurroundingLines": 5,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.hover.sticky": false,
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+  // "editor.fontWeight": "450",
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.formatOnSave": true,
+
+  /* ======================= Terminal ======================= */
+  "terminal.integrated.fontFamily": "IosevkaTerm Nerd Font",
+  "terminal.integrated.stickyScroll.enabled": false,
+
+  /* ======================= Ventana ======================= */
+  "window.zoomLevel": 0,
+  "window.menuBarVisibility": "toggle",
+
+  "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+
+  "breadcrumbs.enabled": false,
+
+  /* ======================= Explorador de archivos ======================= */
+  "explorer.compactFolders": false,
+  "files.exclude": {
+    "**/node_modules": true
+  },
+
+  /* ======================= Teclados en pantalla ======================= */
+  "screencastMode.fontSize": 20,
+  "screencastMode.verticalOffset": 3,
+  "screencastMode.mouseIndicatorColor": "#efefef00",
+
+  /* ======================= Vim ======================= */
+  "vim.leader": "<space>",
+  "vim.hlsearch": true,
+  "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.textColor": "white",
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.foldfix": true,
+  "vim.handleKeys": {
+    "<C-d>": false,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["leader", "leader"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<Enter>"],
+      "commands": ["editor.toggleFold"]
+    },
+    {
+      "before": ["leader", "w"],
+      "commands": [":w"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": [":q"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] }
+  ],
+
+  /* ======================= Prettier ======================= */
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "reactSnippets.settings.importReactOnTop": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "extensions.ignoreRecommendations": true
+}
