@@ -2,46 +2,46 @@ return {
   {
     -- Plugin: goto-preview
     -- URL: https://github.com/rmagatti/goto-preview
-    -- Description: Provides preview functionality for definitions, declarations, implementations, type definitions, and references.
+    -- Descripción: Proporciona funcionalidad de vista previa para definiciones, declaraciones, implementaciones, definiciones de tipos y referencias.
     "rmagatti/goto-preview",
-    event = "BufEnter", -- Load the plugin when a buffer is entered
-    config = true, -- Enable default configuration
+    event = "BufEnter", -- Cargar el plugin cuando se ingrese a un buffer
+    config = true, -- Habilitar la configuración predeterminada
     keys = {
       {
         "gpd",
         "<cmd>lua require('goto-preview').goto_preview_definition()<CR>",
-        noremap = true, -- Do not allow remapping
-        desc = "goto preview definition", -- Description for the keybinding
+        noremap = true, -- No permitir el remapeo
+        desc = "ir a la vista previa de la definición", -- Descripción del atajo de teclado
       },
       {
         "gpD",
         "<cmd>lua require('goto-preview').goto_preview_declaration()<CR>",
         noremap = true,
-        desc = "goto preview declaration",
+        desc = "ir a la vista previa de la declaración",
       },
       {
         "gpi",
         "<cmd>lua require('goto-preview').goto_preview_implementation()<CR>",
         noremap = true,
-        desc = "goto preview implementation",
+        desc = "ir a la vista previa de la implementación",
       },
       {
         "gpy",
         "<cmd>lua require('goto-preview').goto_preview_type_definition()<CR>",
         noremap = true,
-        desc = "goto preview type definition",
+        desc = "ir a la vista previa de la definición de tipo",
       },
       {
         "gpr",
         "<cmd>lua require('goto-preview').goto_preview_references()<CR>",
         noremap = true,
-        desc = "goto preview references",
+        desc = "ir a la vista previa de las referencias",
       },
       {
         "gP",
         "<cmd>lua require('goto-preview').close_all_win()<CR>",
         noremap = true,
-        desc = "close all preview windows",
+        desc = "cerrar todas las ventanas de vista previa",
       },
     },
   },
